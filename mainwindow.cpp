@@ -90,6 +90,9 @@ void MainWindow::loadSrtFile()
         deffolder = dialog.directory().path();
         settings->setValue("Default Folder",deffolder);
         settings->sync();
+
+        setWindowTitle("Sub2Text 0.1 - "+filename);
+
         numberCount = -1;
         bool started = false;
         QFile file(filename);
@@ -145,6 +148,8 @@ void MainWindow::loadTextFile()
         deffolder = dialog.directory().path();
         settings->setValue("Default Folder",deffolder);
         settings->sync();
+
+        setWindowTitle("Sub2Text 0.1 - "+filename);
 
         numberCount = -1;
         QFile file(filename);

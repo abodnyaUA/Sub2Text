@@ -6,5 +6,7 @@
         <file>res/help.png</file>
         <file>res/save.png</file>
         <file>res/icon.png</file>
+        <file>lng/ru.qm</file>
+        <file>lng/uk.qm</file>
     </qresource>
 </RCC>

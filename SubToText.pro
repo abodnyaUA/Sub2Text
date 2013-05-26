@@ -13,10 +13,6 @@ TEMPLATE = app
 unix {
     target.path = /usr/local/bin
 }
-win32 {
-#OS WIN
-RC_FILE = myapp.rc
- }
 
 SOURCES += main.cpp\
         mainwindow.cpp
@@ -29,5 +25,14 @@ FORMS    += mainwindow.ui
 TRANSLATIONS += lng/ru.ts \
                 lng/uk.ts
 
+
+win32 {
+#OS WIN
+RC_FILE = winicon.rc
+ }
+
 RESOURCES += \
     res.qrc
+
+OTHER_FILES += \
+    winicon.rc
